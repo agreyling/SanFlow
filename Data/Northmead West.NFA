@@ -1,0 +1,48 @@
+[Zone Constants]
+Zone Name = Northmead West
+MainsLosses = 100.000
+ConnectionLosses = 10.000
+PropertyLosses = 5.000
+ActivePopulation = 6.000
+UnitNightUse = 15.000
+BackgroundPCF = 1.500
+BurstPCF = 0.500
+UnitESPB = 1.600
+[Zone Variables]
+NightFlowReference = Northmead West
+MeasurementDate = 06/01/2000
+MeasuredAZNP = 30.000
+MeasuredMinimumNightFlow = 16.000
+MainsLength = 3.690
+NumberOfConnections = 131
+NumberOfProperties = 140
+Population = 774
+[Non-Domestic unmetered night use]
+Description = Office Block
+NumberOff = 1
+Use = 200.000
+Description = School
+NumberOff = 1
+Use = 500.000
+[Non-Domestic metered night use]
+Description = 
+Use = 0.000
+[Zone Variables]
+NightFlowReference = Northmead West
+MeasurementDate = 07/01/2000
+MeasuredAZNP = 30.000
+MeasuredMinimumNightFlow = 14.000
+MainsLength = 3.690
+NumberOfConnections = 131
+NumberOfProperties = 140
+Population = 774
+[Non-Domestic unmetered night use]
+Description = School
+NumberOff = 1
+Use = 500.000
+Description = Office Block
+NumberOff = 1
+Use = 200.000
+[Non-Domestic metered night use]
+Description = 
+Use = 0.000

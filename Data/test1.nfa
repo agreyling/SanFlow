@@ -1,0 +1,26 @@
+[Zone Constants]
+Zone Name = 
+MainsLosses = 40.000
+ConnectionLosses = 3.000
+PropertyLosses = 1.000
+ActivePopulation = 6.000
+UnitNightUse = 10.000
+BackgroundPCF = 1.500
+BurstPCF = 0.500
+UnitESPB = 1.600
+[Zone Variables]
+NightFlowReference = test1
+MeasurementDate = 11/12/2002
+MeasuredAZNP = 50.000
+MeasuredMinimumNightFlow = 45.000
+MainsLength = 33.000
+NumberOfConnections = 1600
+NumberOfProperties = 1750
+Population = 8000
+[Non-Domestic unmetered night use]
+Description = 24 hour garrages
+NumberOff = 8
+Use = 120.000
+[Non-Domestic metered night use]
+Description = school
+Use = 24.000

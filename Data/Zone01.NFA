@@ -1,0 +1,26 @@
+[Zone Constants]
+Zone Name = Zone01
+MainsLosses = 50.000
+ConnectionLosses = 4.000
+PropertyLosses = 0.800
+ActivePopulation = 4.000
+UnitNightUse = 10.000
+BackgroundPCF = 1.500
+BurstPCF = 0.500
+UnitESPB = 1.800
+[Zone Variables]
+NightFlowReference = Zone01-240498
+MeasurementDate = 24/04/1998
+MeasuredAZNP = 63.000
+MeasuredMinimumNightFlow = 20.000
+MainsLength = 12.000
+NumberOfConnections = 500
+NumberOfProperties = 600
+Population = 2500
+[Non-Domestic unmetered night use]
+Description = 
+NumberOff = 0
+Use = 0.000
+[Non-Domestic metered night use]
+Description = 
+Use = 0.000

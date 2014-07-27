@@ -1,0 +1,245 @@
+{\rtf1\ansi \deff1
+
+{\fonttbl
+{\f1\fswiss Arial;}
+{\f2\fswiss Times New Roman;}
+}
+
+{\colortbl;
+\red0\green0\blue0;
+\red0\green0\blue255;
+\red0\green255\blue255;
+\red0\green255\blue0;
+\red255\green0\blue255;
+\red255\green0\blue0;
+\red255\green255\blue0;
+\red255\green255\blue255;
+\red0\green0\blue128;
+\red0\green128\blue128;
+\red0\green128\blue0;
+\red128\green0\blue128;
+\red128\green0\blue0;
+\red128\green128\blue0;
+\red128\green128\blue128;
+\red192\green192\blue192;
+}
+
+#{\footnote ZONECONSTANTSGENERAL}
+${\footnote Zone Constants General}
+>{\footnote Normal}
+@{\footnote 1}
+K{\footnote zone constants;constants;general;}
+\keepn 
+\f1 \fs20 \b \i0 \uldb0 \ul0 1.1 General
+\par \b0 \i0 \uldb0 \ul0 
+\par \pard The zone constants are variables defined for each zone which reflect the characteristics of the zone. These variables can change from one zone to another but will remain constant for each nightflow analysis undertaken for a specific zone.
+\par 
+\par \{bmct Constants Start.bmp\}
+\par The zone constants are:
+\par 	\b0 \i0 \uldb \ul0 Zone reference (§1.2){\v ZONEREFERENCE}
+\par \b0 \i0 \uldb0 \ul0 	Background loss parameters for:
+\par 		\b0 \i0 \uldb \ul0 Mains (§1.3.1){\v MAINSLOSSPARAMETER}
+\par \b0 \i0 \uldb0 \ul0 		\b0 \i0 \uldb \ul0 Connections (§1.3.2){\v CONNECTIONSLOSSPARAMETER}
+\par \b0 \i0 \uldb0 \ul0 		\b0 \i0 \uldb \ul0 Installations (or properties - §1.3.3){\v INSTALLATIONLOSSPARAMETER\b0 \i0 \uldb0 \ul0 }
+\page 
+
+#{\footnote ZONEREFERENCE}
+${\footnote Zone Reference}
+>{\footnote Normal}
+@{\footnote 2}
+\keepn 
+\f1 \fs20 \b \i0 \uldb0 \ul0 1.2 Zone Reference
+\par \b0 \i0 \uldb0 \ul0 
+\par \pard The zone reference provides a unique reference label to each zone. It can contain numbers and/or letters and can be of any length although the menu box will only display ???? characters at one time. Typical examples are:
+\par 	ZONE0014
+\par 	WATERKLOOF.01A
+\page 
+#{\footnote MAINSLOSSPARAMETER}
+${\footnote Connections Loss Parameter}
+>{\footnote Normal}
+@{\footnote 3}
+\keepn 
+\f1 \fs20 \b \i0 \uldb0 \ul0 1.3.1 Mains Loss Parameters (MLP)
+\par \b0 \i0 \uldb0 \ul0 
+\par \pard This parameter defines the level of leakage occuring from the mains pipes which are effectively all pipes from which individual connections are made. Values for the Mains Loss Parameter are typically between 20 l/km/hr for relatively new pipes in a sound condition to 60 l/km/hr for older pipes which are showing signs of deterioration - all at standard pressure of 50m.
+\par 
+\page 
+#{\footnote CONNECTIONSLOSSPARAMETER}
+${\footnote Connections Loss Parameter}
+>{\footnote Normal}
+@{\footnote 4}
+\keepn 
+\f1 \fs20 \b \i0 \uldb0 \ul0 1.3.2 Connections Loss Parameter (CLP)
+\par \b0 \i0 \uldb0 \ul0 
+\par \pard This parameter defines the level of leakage occuring from each connection. The connection is considered to be the joint at the mains pipe plus all pipes and fittings to the property boundary which may or may not include the water meter. The default value is 40 l/km/hr.
+\par 
+\par Typical values of CLP are between 1 litre per connection per hour to 5 l/conn/hr at standard pressure of 50m
+\par 
+\par The user should select a value in accordance with the quality of the pipework and age of the system. The default value is 3 l/conn/hr.
+\page 
+#{\footnote INSTALLATIONLOSSPARAMETER}
+${\footnote Installation Loss Parameter}
+>{\footnote Normal}
+@{\footnote 5}
+\keepn 
+\f1 \fs20 \b \i0 \uldb0 \ul0 1.3.3 Installation Loss Parameter (ILP)
+\par \b0 \i0 \uldb0 \ul0 
+\par \pard This parameter defines the leakage occuring from the property boundary to the property plus the internal plumbing losses. In areas where internal plumbing losses are under control the value of the ILP is generally between 0.5l/installation/hr and 5l/installation/hr. The default value of 1l/installation/hr assumes that 50% of the leakage is internal and 50% external.
+\par 
+\par In many parts of South Africa the internal plumbing losses are not small and in fact dominate the nightflow calculation. In such cases it is often possible to estimate the internalk plumbing losses directly from the measured minimum nightflow. If the plumbing losses are high, they should be addressed before the SANFLOW model can be used to predict the number of unreported bursts.
+\par 
+\page 
+#{\footnote PRESSURECORRECTIONGENERAL}
+${\footnote Pressure Correction General}
+>{\footnote Normal}
+@{\footnote 6}
+\keepn 
+\f1 \fs20 \b \i0 \uldb0 \ul0 1.4.1 General
+\par \b0 \i0 \uldb0 \ul0 
+\par \pard Pressure has a significant influence on the leakage from a system and this must be taken into account when comparing nightflow measurements from different zones as well as for the same zone at a different time. In order to overcome the problem of incompatibility of results between nightflow analyses at different operating pressures, a standard pressure of 50m is used as a benchmark. Pressure correction factors are applied to the various leakage estimates to take the pressure differences into account.
+\par 
+\par The pressure correction factor is used as follows:
+\par 
+\par FLOWp1 = FLOW50 * (P1/50)POWER where,
+\par 	FLOWp1 = flow rate at operating pressure P1 (m³/hr)
+\par 	FLOW50 = flow rate at standard pressure of 50m (m³/hr)
+\par 	POWER = power law index (usually between 0.5 and 1.5)
+\par 
+\par For example, if the operating pressure is 63m and a power law index of 1.5 is accepted, the scaling factor (ie (P1/50)^POWER) will be 1.414 which indicates that the leakage at 63m is 1.414 times greater than the leakage at 50m of pressure. The selection of the POWER variable is discussed in sections 1.4.2 and 1.4.3.
+\par 
+\par 
+\par 
+\page 
+#{\footnote BACKGROUNDLEAKAGEPOWERINDEX}
+${\footnote Background Leakage Power Index}
+>{\footnote Normal}
+@{\footnote 7}
+\keepn 
+\f1 \fs20 \b \i0 \uldb0 \ul0 1.4.2 Background Leakage Power Index (BLPI)
+\par \b0 \i0 \uldb0 \ul0 
+\par \pard The selection of the appropriate power index for background leakage is a very subjective issue and one in which there are many different views. In general it is usually assumed that background leakage from a water supply network occurs mainly through the joints and connections. As the pressure increases, the joints expand to give a larger loss area with the result that the water losses are not linear with respect ot the pressure. This is considered to be the case especially with plastic/PVC pipes and fittings. It is suggested that a value of 1.5 be used in cases where plastic pipes are used and a value of 1.0 in cases where steel or concrete pipes are used.
+\par 
+\par Default value for BLPI = 1.5
+\page 
+#{\footnote BURSTLEAKAGEPOWERINDEX}
+${\footnote Burst Leakage Power Index}
+>{\footnote Normal}
+@{\footnote 8}
+\keepn 
+\f1 \fs20 \b \i0 \uldb0 \ul0 1.4.3 Burst Leakage Power Index (BUPLI)
+\par \b0 \i0 \uldb0 \ul0 
+\par \pard A burst pipe is usually a physical break or hole in a pipe which results in losses in excess of 0.25m³/hr (UK standard 0.5m³/hr). In the case of a hole in a pipe, the size of the opening remains constant at different pressures and does not increase with pressure. In such cases an index of 0.5 is considered to be realistic and a value of between 0.5 and 1.0 is normally selected.
+\par 
+\par Default value of BUPLI = 0.5
+\page 
+#{\footnote GROUPEDNIGHTUSE}
+${\footnote Grouped Night Use}
+>{\footnote Normal}
+@{\footnote 11}
+\keepn 
+\f1 \fs20 \b \i0 \uldb0 \ul0 1.5.3 Grouped Night Use
+\par \b0 \i0 \uldb0 \ul0 
+\par \pard A form is provided to take account of other small night users such as cafés, garages, etc. Any grouping can be included together with the number in each group and the hourly use of water per unit. For example we may have 8 all night garages using 30l/hr plus 4 all night cafés using 10l/hr in which case the total grouped night use will be 280l/hr (8*30 + 4*10)
+\page 
+#{\footnote ASSESSEDNIGHTUSEGENERAL}
+${\footnote Assessed Night Use General}
+>{\footnote Normal}
+@{\footnote 9}
+\keepn 
+\f1 \fs20 \b \i0 \uldb0 \ul0 1.5.1 General
+\par \b0 \i0 \uldb0 \ul0 
+\par \pard During the period when the minimum night flow is measured, there are likely to be some legitimate users of water which must be taken into consideration. There may be nightworkers who work shifts, all night garages, schools with automatic flushing toilets, hospitals, hotels, industries, etc all of which may use water throughout the night. In the case of the population based night use it is assumed that most of the water is used through toilet flushing.
+\par 
+\par Since it is not possible to check every meter during the night flow measurement exercise, the quantity of water used is estimated based upon various assumptions.
+\par 
+\par The SANFLOW model splits the legitimate night use into three components, which are discussed individually in sections 1.5.2, 1.5.3 and 1.5.4.
+\par 	\b0 \i0 \uldb \ul0 Normal population based night use (§1.5.2){\v POPULATIONBASEDNIGHTUSE}
+\par \b0 \i0 \uldb0 \ul0 	\b0 \i0 \uldb \ul0 Grouped night use (cafés, garage, etc. §1.5.3){\v GROUPEDNIGHTUSE}
+\par \b0 \i0 \uldb0 \ul0 	\b0 \i0 \uldb \ul0 Individually metered night use (schools, airports, hotels, etc §1.5.4){\v METEREDNIGHTUSE}
+\par 
+\page 
+#{\footnote POPULATIONBASEDNIGHTUSE}
+${\footnote Population Based Night Use}
+>{\footnote Normal}
+@{\footnote 10}
+\keepn 
+\f1 \fs20 \b \i0 \uldb0 \ul0 1.5.2 Population Based Night Use
+\par \b0 \i0 \uldb0 \ul0 
+\par \pard In order to estimate the population based night use, certain items must be defined. Obviously the population in the zone is of primary importance after which the percentage of the population who flush the toilet during any hour is a key parameter. Finally, the volumne of the standard toilet cistern is needed to give the total volumne used by the population in any one hour.
+\par 
+\par In Europe it is generally accepted that 6% of the population are active during the night anf that the average toilet flush is 10 litres. In South Africa it is considered realistic to use 3%.
+\page 
+#{\footnote METEREDNIGHTUSE}
+${\footnote Metered Night Use}
+>{\footnote Normal}
+@{\footnote 12}
+\keepn 
+\f1 \fs20 \b \i0 \uldb0 \ul0 1.5.4 Metered Night Use
+\par \b0 \i0 \uldb0 \ul0 
+\par \pard In cases where a large water user is located in the zone it is often necessary to record the actual water use during the night flow exercise. A form is included for such users which requires only a short description of the user as well as their hourly water use. The water use of such users is added to provide the total metered night use.
+\page 
+#{\footnote MEASUREMENTDATE}
+${\footnote Measurement Date}
+>{\footnote Normal}
+@{\footnote 16}
+\keepn 
+\f1 \fs20 \b \i0 \uldb0 \ul0 2.3 Measurement Date
+\par \b0 \i0 \uldb0 \ul0 
+\par \pard This refers to the date of the nightflow measurement and is selected throught the small calendar form via the main \b0 \i0 \uldb \ul0 Zone Infrastructure Variable Form{\v ZONEVARIABLESGENERAL}.\b0 \i0 \uldb0 \ul0  Since the date can only be inserted using the calendar sub-form there is no possibilty of using the incorrect format.
+\page 
+#{\footnote EQUIVALENTSERVICEPIPEBURSTS}
+${\footnote Equivalent Service Pipe Bursts}
+>{\footnote Normal}
+@{\footnote 13}
+\keepn 
+\f1 \fs20 \b \i0 \uldb0 \ul0 1.6 Equivalent Service Pipe Bursts
+\par \b0 \i0 \uldb0 \ul0 
+\par \pard The output from SANFLOW is generally given as the excess night flow which cannot be explained or accounted for. This excess flow obviously incorporates any erros associated with the assumptions made in the calculation as well as the water lost through burst pipes. In order to place the excess night flow into perspective and for comparison with other zones, it is also expressed in terms of Equivalent Service Pipe Bursts. Practice has shown that most of the burst pipes are on the service pipes (ie the installations and connections) which generally result in leakage of approximately 1.6m³/hr at standard pressure. A default value of 1.6m³/hr is used in the model although this can be changed if considered appropriate.
+\page 
+#{\footnote ZONEVARIABLESGENERAL}
+${\footnote General}
+>{\footnote Normal}
+@{\footnote 14}
+\keepn 
+\f1 \fs20 \b \i0 \uldb0 \ul0 2.1 General
+\par \b0 \i0 \uldb0 \ul0 
+\par \pard The zone infrastructure variables are grouped seperately since they can be changed from one night flow measurement to another although many of the variables will remain unchanged throughout the year. the variables are discussed individually in sections 2.2 to 2.9
+\page 
+#{\footnote NIGHTFLOWREFERENCENUMBER}
+${\footnote Night Flow Reference Number}
+>{\footnote Normal}
+@{\footnote 15}
+\keepn 
+\f1 \fs20 \b \i0 \uldb0 \ul0 2.2 Night Flow Reference Number
+\par \b0 \i0 \uldb0 \ul0 
+\par \pard This number is simply a reference for the given night flow analysis and is effectively only used for "cosmetic" purposes since the \b0 \i0 \uldb \ul0 Zone Reference Number{\v ZONEREFERENCE} \b0 \i0 \uldb0 \ul0 and Measurement Date will uniquely define a specific nightflow anlysis.
+\page 
+
+#{\footnote AVERAGENIGHTZONEPRESSURE}
+${\footnote Average Night Zone Pressure}
+>{\footnote Normal}
+@{\footnote 17}
+\keepn 
+\f1 \fs20 \b \i0 \uldb0 \ul0 2.4 Average Night Zone Pressure (AZNP)
+\par \b0 \i0 \uldb0 \ul0 
+\par \pard The average zone night pressure is as the name suggests the weighted average pressure throughout the zone during the period over which the minimum night flow measurement was taken. Details of how to calculate AZNP are provided in the main user guide.
+\page 
+#{\footnote MEASUREDMINIMUMNIGHTFLOW}
+${\footnote Measured Minimum Night Flow}
+>{\footnote Normal}
+@{\footnote 18}
+\keepn 
+\f1 \fs20 \b \i0 \uldb0 \ul0 2.5 Measured Minimum Night Flow
+\par \b0 \i0 \uldb0 \ul0 
+\par \pard The measured minimum night flow is the basic information on which the night flow analysis is based. The minimum night flow is either measured manually from the meter by recording the gauge reading each hour or taken from an automatic logger record. The minimum night flow is expressed in m³/hr and represents the minimum hourly flow entering a zone. The value recorded comprises three elements which can be broken down as follows:
+\par 	Assessed Night Use
+\par 		\b0 \i0 \uldb \ul0 Population night use{\v POPULATIONBASEDNIGHTUSE}
+\par \b0 \i0 \uldb0 \ul0 		\b0 \i0 \uldb \ul0 Grouped Night Use{\v GROUPEDNIGHTUSE}
+\par \b0 \i0 \uldb0 \ul0 		\b0 \i0 \uldb \ul0 Metered Night Use{\v METEREDNIGHTUSE}
+\par \b0 \i0 \uldb0 \ul0 	Background Losses
+\par 		Mains losses
+\par 		Connection losses
+\par 		Installation losses
+\par 	Unexplained Night Use (ie bursts)
+\page 
+}

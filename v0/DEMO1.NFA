@@ -1,0 +1,45 @@
+[Zone Constants]
+Zone Name = QZ944-A
+MainsLosses = 40.000
+ConnectionLosses = 3.000
+PropertyLosses = 1.000
+ActivePopulation = 6.000
+UnitNightUse = 10.000
+BackgroundPCF = 1.500
+BurstPCF = 0.500
+UnitESPB = 1.600
+[Zone Variables]
+NightFlowReference = QZ944-A/98/01
+MeasurementDate = 15/02/1998
+MeasuredAZNP = 50.000
+MeasuredMinimumNightFlow = 14.400
+MainsLength = 9.300
+NumberOfConnections = 600
+NumberOfProperties = 672
+Population = 3000
+[Non-Domestic unmetered night use]
+Description = 24hr Garage
+NumberOff = 3
+Use = 0.000
+[Non-Domestic metered night use]
+Description = School
+Use = 0.000
+[Zone Variables]
+NightFlowReference = QZ944-A/98/02
+MeasurementDate = 11/03/1998
+MeasuredAZNP = 63.000
+MeasuredMinimumNightFlow = 9.000
+MainsLength = 9.300
+NumberOfConnections = 600
+NumberOfProperties = 672
+Population = 3000
+[Non-Domestic unmetered night use]
+Description = 24hr Garage
+NumberOff = 3
+Use = 0.000
+Description = Cafe
+NumberOff = 5
+Use = 0.000
+[Non-Domestic metered night use]
+Description = Swimming Pool
+Use = 0.000

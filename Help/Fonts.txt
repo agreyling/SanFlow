@@ -1,0 +1,4 @@
+{\f0\froman Times New Roman;}
+{\f1\fswiss MS Sans Serif;}
+{\f2\fswiss Arial;}
+{\f3\fmodern Courier New;}

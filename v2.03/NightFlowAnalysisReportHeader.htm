@@ -1,0 +1,272 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>Night Flow Analysis</title>
+<style>
+<!-- 
+
+    body, p, h1, h2, h3, h4, table, tr, th, td {
+      margin: 3 3 3 3;
+      color: #000000;
+      background-color: #FFFFFF;
+      font-size: 10pt;
+      font-family: Arial;
+      text-align: center;
+      line-height: 100%;
+      text-indent: 0;
+    }
+    h1, h2, h3, h4 { font-weight: bold; }
+    h1 { font-size: 16pt; margin-top: 16; margin-bottom: 16; }
+    h2 { font-size: 14pt; margin-top: 14; margin-bottom: 14; }
+    h3 { font-size: 12pt; margin-top: 12; margin-bottom: 12; }
+    h4 { font-size: 10pt; margin-top: 10; margin-bottom: 10; }
+
+    table {
+      align: center;
+      font-size: 8pt;
+	  border-style: groove;
+      border-width: 1;
+      padding-left: 4;
+      padding-right: 4;
+      padding-top: 1;
+      padding-bottom: 1; }
+    th {
+      font-size: 10pt;
+      padding: 4;
+      border: none;
+    }
+    th.Blue        { background-color: #B7D8F2 }
+    td {
+      text-align: center;
+      border-top: 1px solid #DDDDDD;
+      border-left: 1px solid #DDDDDD;
+      border-right: 1px solid #B0B0B0;
+      border-bottom: 1px solid #B0B0B0;
+      padding: 4;
+      vertical-align: middle;
+      font-size: 10pt;
+    }
+    td.Left       { text-align: left;  color: #000000; }
+    td.Right      { text-align: right; color: #000000; }
+
+-->
+</style>
+</head>
+<body>
+<h1>Night Flow Analysis Report</h1>
+
+<html>
+<table width="90%">
+ <tr>
+  <th class="Blue">Zone</th>
+  <th class="Blue">Reference Number</th>
+  <th class="Blue">Measurement Date</th>
+  <th class="Blue">Mains Length</th>
+  <th class="Blue">Number of Connections</th>
+  <th class="Blue">Number of Properties</th>
+  <th class="Blue">Population</th>
+  <th class="Blue">Average Night Zone Pressure</th>
+  <th class="Blue">Measured Minimum Night Flow</th>
+  <th class="Blue">Estimated Background Losses</th>
+  <th class="Blue">Estimated Normal Night Use</th>
+  <th class="Blue">Expected Night Flow</th>
+  <th class="Blue">Excess Night Flow</th>
+  <th class="Blue">Estimated Service Pipe Burst</th>
+ </tr>
+ <tr>
+  <th class="Blue">&nbsp;</th>
+  <th class="Blue">&nbsp;</th>
+  <th class="Blue">&nbsp;</th>
+  <th class="Blue">(km)</th>
+  <th class="Blue">&nbsp;</th>
+  <th class="Blue">&nbsp;</th>
+  <th class="Blue">&nbsp;</th>
+  <th class="Blue">(m)</th>
+  <th class="Blue">(m³/hr)</th>
+  <th class="Blue">(m³/hr)</th>
+  <th class="Blue">(m³/hr)</th>
+  <th class="Blue">(m³/hr)</th>
+  <th class="Blue">(m³/hr)</th>
+  <th class="Blue">&nbsp;</th>
+ </tr>
+<!-- Index = 0  -->
+
+<html>
+ <tr>
+  <td class="Left">QZ944-A</td>
+  <td class="Left">QZ944-A/98/01</td>
+  <td class="Left">15/02/1998</td>
+  <td class="Right">9.3</td>
+  <td class="Right">600</td>
+  <td class="Right">672</td>
+  <td class="Right">3000</td>
+  <td class="Right">50.0</td>
+  <td class="Right">14.40</td>
+  <td class="Right">2.84</td>
+  <td class="Right">4.50</td>
+  <td class="Right">7.34</td>
+  <td class="Right">7.06</td>
+  <td class="Right">4.4</td>
+ </tr>
+</html>
+
+<!-- Index = 1  -->
+
+<html>
+ <tr>
+  <td class="Left">QZ944-A</td>
+  <td class="Left">QZ944-A/98/02</td>
+  <td class="Left">11/03/1998</td>
+  <td class="Right">9.3</td>
+  <td class="Right">600</td>
+  <td class="Right">672</td>
+  <td class="Right">3000</td>
+  <td class="Right">63.0</td>
+  <td class="Right">14.40</td>
+  <td class="Right">4.02</td>
+  <td class="Right">4.50</td>
+  <td class="Right">8.52</td>
+  <td class="Right">5.88</td>
+  <td class="Right">3.3</td>
+ </tr>
+</html>
+
+<!-- Index = 2  -->
+
+<html>
+ <tr>
+  <td class="Left">QZ944-A</td>
+  <td class="Left">QZ944-A/98/03</td>
+  <td class="Left">18/03/1998</td>
+  <td class="Right">9.3</td>
+  <td class="Right">600</td>
+  <td class="Right">672</td>
+  <td class="Right">3000</td>
+  <td class="Right">60.0</td>
+  <td class="Right">9.00</td>
+  <td class="Right">3.74</td>
+  <td class="Right">1.80</td>
+  <td class="Right">5.54</td>
+  <td class="Right">3.46</td>
+  <td class="Right">2.0</td>
+ </tr>
+</html>
+
+<!-- Index = 3  -->
+
+<html>
+ <tr>
+  <td class="Left">QZ944-A</td>
+  <td class="Left">QZ944-A/98/04</td>
+  <td class="Left">25/03/1998</td>
+  <td class="Right">9.3</td>
+  <td class="Right">600</td>
+  <td class="Right">672</td>
+  <td class="Right">3000</td>
+  <td class="Right">55.0</td>
+  <td class="Right">9.00</td>
+  <td class="Right">3.28</td>
+  <td class="Right">1.80</td>
+  <td class="Right">5.08</td>
+  <td class="Right">3.92</td>
+  <td class="Right">2.3</td>
+ </tr>
+</html>
+
+<!-- Index = 4  -->
+
+<html>
+ <tr>
+  <td class="Left">QZ944-A</td>
+  <td class="Left">QZ944-A/98/05</td>
+  <td class="Left">01/04/1998</td>
+  <td class="Right">9.3</td>
+  <td class="Right">600</td>
+  <td class="Right">672</td>
+  <td class="Right">3000</td>
+  <td class="Right">45.0</td>
+  <td class="Right">9.00</td>
+  <td class="Right">2.43</td>
+  <td class="Right">1.80</td>
+  <td class="Right">4.23</td>
+  <td class="Right">4.77</td>
+  <td class="Right">3.1</td>
+ </tr>
+</html>
+
+<!-- Index = 5  -->
+
+<html>
+ <tr>
+  <td class="Left">QZ944-A</td>
+  <td class="Left">QZ944-A/98/06</td>
+  <td class="Left">08/04/1998</td>
+  <td class="Right">9.3</td>
+  <td class="Right">600</td>
+  <td class="Right">672</td>
+  <td class="Right">3000</td>
+  <td class="Right">63.0</td>
+  <td class="Right">9.00</td>
+  <td class="Right">4.02</td>
+  <td class="Right">1.80</td>
+  <td class="Right">5.82</td>
+  <td class="Right">3.18</td>
+  <td class="Right">1.8</td>
+ </tr>
+</html>
+
+<!-- Index = 6  -->
+
+<html>
+ <tr>
+  <td class="Left">QZ944-A</td>
+  <td class="Left">QZ944-A/98/07</td>
+  <td class="Left">15/04/1998</td>
+  <td class="Right">9.3</td>
+  <td class="Right">600</td>
+  <td class="Right">672</td>
+  <td class="Right">3000</td>
+  <td class="Right">58.0</td>
+  <td class="Right">20.00</td>
+  <td class="Right">3.55</td>
+  <td class="Right">1.80</td>
+  <td class="Right">5.35</td>
+  <td class="Right">14.65</td>
+  <td class="Right">8.5</td>
+ </tr>
+</html>
+
+<!-- Index = 7  -->
+
+<html>
+ <tr>
+  <td class="Left">QZ944-A</td>
+  <td class="Left">QZ944-A/98/07</td>
+  <td class="Left">22/04/1998</td>
+  <td class="Right">9.3</td>
+  <td class="Right">600</td>
+  <td class="Right">672</td>
+  <td class="Right">3000</td>
+  <td class="Right">72.0</td>
+  <td class="Right">30.00</td>
+  <td class="Right">4.91</td>
+  <td class="Right">1.80</td>
+  <td class="Right">6.71</td>
+  <td class="Right">23.29</td>
+  <td class="Right">12.1</td>
+ </tr>
+</html>
+
+
+</table>
+<p style="text-align: right">
+</br>
+<img src="Sanflow.emf" width="171" height="33">
+</br>
+<foot>Date printed : 18/07/2013 12:40:44</foot> 
+</p>
+<foot>SANFLOW Version 2.0.3: March 2009</foot> 
+</br>
+<foot>© WRC & WRP (Pty) Ltd / Miya</foot> 
+</body>
+</html>

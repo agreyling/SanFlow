@@ -1,0 +1,46 @@
+1 Formatting
+2 Colours=COLOURS>Normal
+2 Fonts=FONTS>Normal
+2 Keep Paragraphs=KEEP>Normal
+2 Format Clear=FORMATCLEAR>Normal
+2 Text Select=TEXTSELECT>Normal
+2 Main Text Area=MAINTEXTAREA>Normal
+1 Topics
+2 New Topic=NEWTOPIC>Normal
+2 HyperLinks=HYPERLINK>Normal
+2 Topic List=TOPICLIST>Normal
+2 New Topic Dialog Box
+3 Topic ID=TOPIC_ID>Normal
+3 Topic Title=TOPIC_TITLE>Normal
+3 Topic Number=TOPIC_NUM>Normal
+3 Topic Window Name=TOPIC_WINDOW>Normal
+3 OK=TOPIC_OK>Normal
+3 Cancel=TOPIC_CANCEL>Normal
+1 File Menu
+2 Open=FILEOPEN>Normal
+2 Save=FILESAVE>Normal
+2 Exit=FILEEXIT>Normal
+2 Save dialog
+3 Filename=SAVE_FILENAME>Normal
+3 Browse files=SAVE_BROWSE>Normal
+3 RTF File=SAVE_RTFCHECK>Normal
+3 Contents file=SAVE_CNTCHECK>Normal
+3 MAP File=SAVE_MAPCHECK>Normal
+3 OK=SAVE_OK>Normal
+3 Cancel=SAVE_CANCEL>Normal
+1 Keywords
+2 Keywords=KEYWORDS>Normal
+2 Add Keyword=ADDKEYWORD>Normal
+2 Add keywords=KEY_ADD>Normal
+2 Delete keywords=KEY_DEL>Normal
+2 Edit keywords=KEY_EDIT>Normal
+2 Keyword list=KEY_LIST>Normal
+2 OK=KEY_OK>Normal
+1 Contents Page
+2 Edit Contents=EDITCONTENTS>Normal
+2 Filename=CONT_FILENAME>Normal
+2 Contents Page Tree=CONT_TREE>Normal
+1 Other Information
+2 Windows Help Compiler=HELP_COMPILER>Normal
+2 Development Team
+1 Development Team=DEVELOPMENT_TEAM>Normal

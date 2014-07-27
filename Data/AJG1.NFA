@@ -1,0 +1,26 @@
+[Zone Constants]
+Zone Name = Jesmondine3
+MainsLosses = 40.000
+ConnectionLosses = 10.000
+PropertyLosses = 5.000
+ActivePopulation = 6.000
+UnitNightUse = 15.000
+BackgroundPCF = 1.500
+BurstPCF = 0.500
+UnitESPB = 1.600
+[Zone Variables]
+NightFlowReference = JesmondineAJG
+MeasurementDate = 2014-07-09
+MeasuredAZNP = 30.000
+MeasuredMinimumNightFlow = 7.969
+MainsLength = 8.290
+NumberOfConnections = 189
+NumberOfProperties = 225
+Population = 1350
+[Non-Domestic unmetered night use]
+Description = 
+NumberOff = 0
+Use = 0.000
+[Non-Domestic metered night use]
+Description = 
+Use = 0.000

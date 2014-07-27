@@ -1,0 +1,37 @@
+[Zone Constants]
+Zone Name = Zone02
+MainsLosses = 40.000
+ConnectionLosses = 3.000
+PropertyLosses = 1.000
+ActivePopulation = 6.000
+UnitNightUse = 10.000
+BackgroundPCF = 1.500
+BurstPCF = 0.500
+UnitESPB = 1.600
+[Zone Variables]
+NightFlowReference = Zone02-240498
+MeasurementDate = 24/04/1998
+MeasuredAZNP = 70.000
+MeasuredMinimumNightFlow = 30.000
+MainsLength = 8.000
+NumberOfConnections = 400
+NumberOfProperties = 500
+Population = 1500
+[Non-Domestic unmetered night use]
+Description = All Night Garage
+NumberOff = 6
+Use = 50.000
+Description = All Night Cafe
+NumberOff = 4
+Use = 20.000
+[Non-Domestic metered night use]
+Description = Airport
+Use = 2.000
+Description = Hotel
+Use = 1.200
+Description = Swimming Pool
+Use = 1.400
+Description = School1
+Use = 0.500
+Description = School2
+Use = 1.000

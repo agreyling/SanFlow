@@ -1,0 +1,48 @@
+[Zone Constants]
+Zone Name = Jesmondine
+MainsLosses = 40.000
+ConnectionLosses = 10.000
+PropertyLosses = 5.000
+ActivePopulation = 6.000
+UnitNightUse = 15.000
+BackgroundPCF = 1.500
+BurstPCF = 0.500
+UnitESPB = 1.600
+[Zone Variables]
+NightFlowReference = Jesmondine
+MeasurementDate = 24/06/1997
+MeasuredAZNP = 30.000
+MeasuredMinimumNightFlow = 7.969
+MainsLength = 8.290
+NumberOfConnections = 189
+NumberOfProperties = 225
+Population = 1350
+[Non-Domestic unmetered night use]
+Description = Shops
+NumberOff = 3
+Use = 200.000
+Description = School
+NumberOff = 1
+Use = 500.000
+[Non-Domestic metered night use]
+Description = 
+Use = 0.000
+[Zone Variables]
+NightFlowReference = Jesmondine
+MeasurementDate = 21/01/2000
+MeasuredAZNP = 30.000
+MeasuredMinimumNightFlow = 8.280
+MainsLength = 8.000
+NumberOfConnections = 211
+NumberOfProperties = 223
+Population = 1400
+[Non-Domestic unmetered night use]
+Description = Shops
+NumberOff = 3
+Use = 200.000
+Description = School
+NumberOff = 1
+Use = 500.000
+[Non-Domestic metered night use]
+Description = 
+Use = 0.000
